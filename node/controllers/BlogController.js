@@ -7,7 +7,7 @@ import BlogModel from "../models/BlogModel.js";
 export const getAllBlogs = async (req, res) => {
     try {
         const blogs = await BlogModel.findAll()
-        res.status(200).json(blogs)
+        res.json(blogs)
     } catch (error) {
         res.json( {message: error.message} )
     }
@@ -15,10 +15,10 @@ export const getAllBlogs = async (req, res) => {
 //Mostrar un blog
 export const getBlog = async (req, res) => {
         try {
-            const id = req.params.id
-            await BlogModel.findById({_id:id}).then ((blog)=>{
-            res.status(200).json(blog)
+            const blogs = await BlogModel.findAll({
+            where:{ id:req.params.id}
         })
+        res.json(blogs)
         } catch (error) {
             res.json( {message: error.message} )
         }

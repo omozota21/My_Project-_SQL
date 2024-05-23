@@ -1,11 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 
-
-
-
-
-
 //importamos los componentes
 import CompShowBlogs from './blog/ShowBlogs';
 import CompCreateBlog from './blog/CreateBlog';
