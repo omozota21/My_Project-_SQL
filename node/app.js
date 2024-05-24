@@ -31,22 +31,6 @@ const connection = mysql.createConnection({
   port: 8000,
 });
 
-connection.connect((error) => {
-  if (error) throw error;
-  console.log("¡Conexión exitosa a la base de datos!");
-});
-
-app.get("/usuarios", (req, res) => {
-  connection.query("SELECT * FROM usuarios", (error, results) => {
-    if (error) {
-      console.error(error);
-      res.status(500).send("Error al obtener los usuarios");
-    } else {
-      res.send(results);
-    }
-  });
-});
-
 
 app.listen(8000, ()=>{
     console.log('Servidor funcionando en http://localhost:8000/')
