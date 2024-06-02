@@ -1,9 +1,12 @@
+Cabe destacar que el diseño de los dos modelos
+tanto como en SQL como en MongoDB son muy parecidos
+con un patrón similar 
 
 Arranque de los distintos Apartados: 
 
-My_Project\reactfront\ --> npm start 
+My_Project\reactfront-_SQL\ --> npm start 
 
-My_Project\node\ --> nodemon app  
+My_Project\node-_SQL\ --> nodemon app  
 
 
 Este proyecto se compone de dos partes 
@@ -16,13 +19,14 @@ las tres opciones (creación, eliminación y modificaión)
 Extructura
 node
     controllers
-        BlogController 
+        BlogController.js
     datbase
-        db
+        db.js
 
 Para verificar la funcion de la base de datos y que todo funciona 
-correctamente use una extension llamada Thunder client
-puediendo comunicarme y mostrar todos los mesajes como mesjae borrado ...
+correctamente use una extension propia de visual studio code llamada Thunder client (para estaa parte dejo una
+foto como ejemplo en la carpeta raiz)
+puediendo comunicarme y mostrar todos los mesajes como mesjae borrado, mensaje modificado y mensaje creado  ...
 
 
 Y la parte de el diseño web con una simple interfaz

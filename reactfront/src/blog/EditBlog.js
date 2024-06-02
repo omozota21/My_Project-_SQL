@@ -20,16 +20,15 @@ const CompEditBlog = () => {
         navigate('/')
     }
 
-    useEffect( ()=>{
-        getBlogById()
-    },[])
-
-    const getBlogById = async () => {
-        const res = await axios.get(`${URI}${id}`)
-        setTitle(res.data.title)
-        setContent(res.data.content)
-    }
-
+    useEffect(() => {
+        const getBlogById = async () => {
+            const res = await axios.get(`${URI}${id}`);
+            setTitle(res.data.title);
+            setContent(res.data.content);
+        };
+        
+    getBlogById();
+}, [id]);
     return (
         <div>
         <h3>Edit POST</h3>
