@@ -1,8 +1,6 @@
 //importamos el Modelo
 import BlogModel from "../models/BlogModel.js";
 
-//** Métodos para el CRUD **/
-
 //Mostrar todos los blogs
 export const getAllBlogs = async (req, res) => {
     try {

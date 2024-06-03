@@ -1,7 +1,21 @@
+A diferencia de del ejercicio de MongoDB 
+este aunque esta todo el codigo correto 
+y verificado varias veces, tengo un problema 
+de credenciales de acceso siendo este el error 
+puesto en pantalla:
+Error al conectar a la base de datos: AccessDeniedError [SequelizeAccessDeniedError]: Access denied for user 'root'@'localhost' (using password: YES)
+Tras mucho tocar e intentar no he podido arreglaro,
+en mi experiencia considero que el manejo de las 
+bases de datos de MongoDB tienen un manejo más facil.
+
 Cabe destacar que el diseño de los dos modelos
 tanto como en SQL como en MongoDB son muy parecidos
 con un patrón similar ya que la composición y el uso de los
 mismos es parecida.
+
+En este tambien e querido poner un makefile
+con un uso funcional pero con el problema que no guarda
+los datos como debria en la DB. 
 
 Arranque de los distintos Apartados: 
 
